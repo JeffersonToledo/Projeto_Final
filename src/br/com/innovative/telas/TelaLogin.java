@@ -8,6 +8,7 @@ package br.com.innovative.telas;
 import java.sql.*;
 import br.com.innovative.dal.ModuloConexao;
 import javax.swing.JOptionPane;
+import java.awt.Color;
 
 /**
  *
@@ -38,6 +39,8 @@ public class TelaLogin extends javax.swing.JFrame {
                 if(perfil.equals("admin")){
                 TelaAdmin principal = new TelaAdmin();
                 principal.setVisible(true);
+                TelaAdmin.lblUsuario.setText(rs.getString(2));
+                TelaAdmin.lblUsuario.setForeground(Color.black);
                 // Fecha a janela de Login:
                 this.dispose();
                 // Fecha a conexão com o Banco de Dados
