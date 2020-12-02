@@ -136,7 +136,9 @@ public class TelaUser extends javax.swing.JFrame {
                     txtAlunoRA.setText(null);
                     txtAlunoPlano.setText(null);
                     txtAlunoSenha.setText(null);
+                    txtAlunoCPF.setText(null);
                     btAlunoAdicionar.setEnabled(true);
+                    
                 }
             }
         }
@@ -167,6 +169,7 @@ public class TelaUser extends javax.swing.JFrame {
                     txtAlunoRA.setText(null);
                     txtAlunoPlano.setText(null);
                     txtAlunoSenha.setText(null);
+                    txtAlunoCPF.setText(null);
                     btAlunoAdicionar.setEnabled(true);
           }
         } catch (Exception e) {
